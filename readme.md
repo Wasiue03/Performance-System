@@ -33,11 +33,9 @@ Ensure you have the following Python packages installed:
 - numpy
 
 You can install these packages using:
+    pip install -r requirements.txt
 
-```bash
-pip install -r requirements.txt
-
-
+# Structure And Techniques
 ### 1. `llama.py`
 - Purpose: Integrates Streamlit with the LLaMA model to create an interactive web application.
 - Functionality:
