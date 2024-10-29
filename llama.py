@@ -26,7 +26,7 @@ def vectorize_data(text_data, model):
     return embeddings
 
 
-def retrieve_relevant_rows(query_vector, embeddings, df, top_n=5):
+def retrieve_relevant_rows(query_vector, embeddings, df, top_n=6):
     similarities = cosine_similarity([query_vector], embeddings)[0]
     top_indices = np.argsort(similarities)[-top_n:][::-1]  # Get top N indices
     return df.iloc[top_indices]
